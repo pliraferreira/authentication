@@ -8,7 +8,7 @@
                 <div class="card-header">{{ __('Dashboard') }}</div>
 
                 <div class="card-body">
-                    Você está logado
+                    {{ auth()->user()->name ?? 'Usuario' }} está logado
                 </div>
             </div>
         </div>
